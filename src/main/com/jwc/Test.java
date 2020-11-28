@@ -7,11 +7,14 @@ public class Test {
             System.out.println("test2");
             System.out.println("test");
             System.out.println();
+
+            System.out.println("11111111");
+
             System.out.println();
 
         }
 
-        private void add(){
+        privatevoid add(){
 //
         }
 
