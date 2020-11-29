@@ -8,28 +8,28 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 public class MyInputStreamReader001 {
-	public static void main(String[] args) {
-		File file = new File("E:\\test\\aaa.txt");
-		InputStream in = null;
-		InputStreamReader inreader = null;
+    public static void main(String[] args) {
+        File file = new File("E:\\test\\aaa.txt");
+        InputStream in = null;
+        InputStreamReader inreader = null;
 
-		try {
-			in = new FileInputStream(file);
-			inreader = new InputStreamReader(in);
+        try {
+            in = new FileInputStream(file);
+            inreader = new InputStreamReader(in);
 
-			char[] cbuffer = new char[1024];
+            char[] cbuffer = new char[1024];
 
-			while ((inreader.read(cbuffer)) != -1) {
-				System.out.println(cbuffer);
-			}
+            while ((inreader.read(cbuffer)) != -1) {
+                System.out.println(cbuffer);
+            }
 
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+        } catch (FileNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
 
-	}
+    }
 }
